@@ -3,7 +3,10 @@
     "description": "Laravel Migrations Generator",
     "type": "laravel-package",
     "require": {
-        "php": "^7.2"
+        "php": "^>=7.1.3",
+        "illuminate/support": "^5.5,<5.9",
+        "illuminate/console": "^5.5,<5.9",
+        "illuminate/filesystem": "^5.5,<5.9"
     },
     "license": "MIT",
     "authors": [
@@ -12,5 +15,22 @@
             "email": "ysoft2000@mail.ru"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "LaravelGenerators\\Migrations\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelGenerators\\Migrations\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelGenerators\\Migrations\\ServiceProvider"
+            ]
+        }
+    }
 }
