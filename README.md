@@ -1,0 +1,2 @@
+# migrations
+Laravel migrations generator
