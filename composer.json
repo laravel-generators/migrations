@@ -1,0 +1,16 @@
+{
+    "name": "laravel-generators/migrations",
+    "description": "Laravel Migrations Generator",
+    "type": "laravel-package",
+    "require": {
+        "php": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Potemkin",
+            "email": "ysoft2000@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev"
+}
